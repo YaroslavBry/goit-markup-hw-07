@@ -29,17 +29,15 @@
   border: 0px;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(var(--cybic-parameters)), color 250ms cubic-bezier(var(--cybic-parameters)), box-shadow 250ms cubic-bezier(var(--cybic-parameters));
-}
-
-.radiobutton-portfolio:nth-last-child {
-  margin-right: 0;
-}
-
-.radiobutton-portfolio:hover,
-.radiobutton-portfolio:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:nth-last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .portfolio-content {
@@ -66,25 +64,18 @@
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-}
-
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .portfolio-link {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(var(--cybic-parameters));
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-link:hover .portfolio-overley,
-.portfolio-link:focus .portfolio-overley {
-  transform: translateY(0);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .portfolio-thumb {
@@ -92,14 +83,13 @@
   overflow: hidden;
 }
 
-.portfolio-picture .p {
-  display: block;
-  min-width: 100%;
-  height: auto;
-}
-
 .portfolio-picture {
   z-index: 2;
+  .p {
+    display: block;
+    min-width: 100%;
+    height: auto;
+  }
 }
 
 .portfolio-overley {
@@ -112,6 +102,10 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(var(--cybic-parameters));
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .portfolio-title {
@@ -131,8 +125,6 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  // text-decoration: none;
-  // list-style: none;
 }
 
 .picture-description {

@@ -22,10 +22,9 @@
 .nav-item {
   position: relative;
   margin-right: 50px;
-}
-
-.nav-item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .nav-link {
@@ -39,11 +38,10 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(var(--cybic-parameters));
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .nav-link.current {
@@ -71,12 +69,10 @@
 }
 
 .site-contact-item {
-  /* display: flex; */
   margin-right: 30px;
-}
-
-.site-contact-item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .site-contact-link {
@@ -93,11 +89,10 @@
   margin-bottom: 0;
   align-items: center;
   transition: color 250ms cubic-bezier(var(--cybic-parameters));
-}
-
-.site-contact-link:hover,
-.site-contact-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .site-contact-icon {

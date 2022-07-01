@@ -87,12 +87,11 @@
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(var(--cybic-parameters));
-}
-
-.footer-links:hover,
-.footer-links:focus {
-  background-color: var(--accent-color);
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
 }
 
 .footer-icon {

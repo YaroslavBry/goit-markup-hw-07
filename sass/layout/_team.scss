@@ -56,10 +56,9 @@
   height: 44px;
   width: 44px;
   margin-right: 10px;
-}
-
-.team-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .team-link {
@@ -71,12 +70,11 @@
   border-radius: 50%;
   color: #afb1b8;
   transition: background-color 250ms cubic-bezier(var(--cybic-parameters)), color 250ms cubic-bezier(var(--cybic-parameters));
-}
-
-.team-link:hover,
-.team-link:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
 }
 
 .team-icon {

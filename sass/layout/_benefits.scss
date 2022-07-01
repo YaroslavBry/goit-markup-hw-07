@@ -23,22 +23,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70px 70px;
-}
-
-.befefit-back.antenna {
-  background-image: url(../images/benefit1.svg);
-}
-
-.befefit-back.clock {
-  background-image: url(../images/benefit2.svg);
-}
-
-.befefit-back.laptop {
-  background-image: url(../images/benefit3.svg);
-}
-
-.befefit-back.astronaut {
-  background-image: url(../images/benefit4.svg);
+  &.antenna {
+    background-image: url(../images/benefit1.svg);
+  }
+  &.clock {
+    background-image: url(../images/benefit2.svg);
+  }
+  &.laptop {
+    background-image: url(../images/benefit3.svg);
+  }
+  &.astronaut {
+    background-image: url(../images/benefit4.svg);
+  }
 }
 
 .benefit-title {

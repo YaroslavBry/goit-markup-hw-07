@@ -29,9 +29,11 @@
   border: 0px;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(var(--cybic-parameters)), color 250ms cubic-bezier(var(--cybic-parameters)), box-shadow 250ms cubic-bezier(var(--cybic-parameters));
+
   &:nth-last-child {
     margin-right: 0;
   }
+
   &:hover,
   &:focus {
     color: var(--white-text-color);
@@ -64,6 +66,7 @@
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+
   &:nth-child(3n) {
     margin-right: 0;
   }
@@ -72,6 +75,7 @@
 .portfolio-link {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(var(--cybic-parameters));
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -102,6 +106,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(var(--cybic-parameters));
+
   .portfolio-link:hover &,
   .portfolio-link:focus & {
     transform: translateY(0);
@@ -116,8 +121,6 @@
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  // text-decoration: none;
-  // list-style: none;
 }
 
 .portfolio-description {

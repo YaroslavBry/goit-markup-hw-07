@@ -71,10 +71,9 @@
   padding: 0;
   height: 44px;
   width: 44px;
-}
-
-.footer-icons li {
-  margin-right: 10px;
+  .li {
+    margin-right: 10px;
+  }
 }
 
 .footer-links {
@@ -87,6 +86,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(var(--cybic-parameters));
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);

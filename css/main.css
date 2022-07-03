@@ -130,11 +130,9 @@ img {
 .nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
 }
-
 .nav-link.current {
   color: var(--accent-color);
 }
-
 .nav-link.current::after {
   content: "";
   position: absolute;
@@ -305,7 +303,6 @@ img {
 }
 
 .benefit-title {
-  /* font-family: Roboto, sans-serif; */
   color: var(--primaty-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -316,7 +313,6 @@ img {
 }
 
 .benefit-desctription {
-  /* font-family: Roboto, sans-serif; */
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -388,7 +384,6 @@ img {
 }
 
 .team-title {
-  /* font-family: Roboto, sans-serif; */
   margin-bottom: 10px;
   color: var(--primaty-text-color);
   font-weight: 500;
@@ -399,7 +394,6 @@ img {
 }
 
 .team-description {
-  /* font-family: Roboto, sans-serif; */
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -556,8 +550,7 @@ img {
   height: 44px;
   width: 44px;
 }
-
-.footer-icons li {
+.footer-icons .li {
   margin-right: 10px;
 }
 
@@ -779,7 +772,6 @@ img {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(var(--cybic-parameters)), visibility 250ms cubic-bezier(var(--cybic-parameters));
 }
-
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -794,7 +786,6 @@ img {
   min-height: 581px;
   width: 528px;
   padding: 40px;
-  /* margin: 0; */
   background-color: var(--white-text-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

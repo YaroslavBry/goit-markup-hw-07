@@ -7,12 +7,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(var(--cybic-parameters)), visibility 250ms cubic-bezier(var(--cybic-parameters));
-}
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -23,11 +23,11 @@
   min-height: 581px;
   width: 528px;
   padding: 40px;
-  /* margin: 0; */
   background-color: var(--white-text-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(var(--cybic-parameters));
+
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
   }
@@ -46,6 +46,7 @@
   background-color: var(--white-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms cubic-bezier(var(--cybic-parameters));
+
   &:hover {
     fill: var(--accent-color);
   }
@@ -102,6 +103,7 @@
   top: 0;
   fill: currentColor;
   transition: border 250ms cubic-bezier(var(--cybic-parameters));
+
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
@@ -114,6 +116,7 @@
   left: 15px;
   transform: translateY(-50%);
   transition: all 250ms cubic-bezier(var(--cybic-parameters));
+
   .form-input:hover + & {
     fill: var(--accent-color);
   }
@@ -136,6 +139,7 @@
   border-radius: 4px;
   resize: none;
   transition: border 250ms cubic-bezier(var(--cybic-parameters));
+
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
@@ -206,6 +210,7 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   transition: background-color 250ms cubic-bezier(var(--cybic-parameters));
+  
   &:hover {
     background: #188ce8;
   }
